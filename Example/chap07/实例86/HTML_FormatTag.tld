@@ -1,0 +1,17 @@
+HTML±àÂë±êÇ©ÃèÊöÆ÷
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE taglib
+PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+"http://Java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd";>
+<TAGLIB>
+<TLIBVERSION>1.0</TLIBVERSION>
+<JSPVERSION>1.1</JSPVERSION>
+<SHORTNAME>HTML_FormatTag</SHORTNAME>
+<URI></URI>
+<INFO>HTML Encoding Tag </INFO>
+<TAG>
+<NAME>HTMLEncode</NAME>
+<TAGCLASS>HTML_FormatTag</TAGCLASS>
+<INFO>Encode HTML</INFO>
+</TAG>
+</TAGLIB>

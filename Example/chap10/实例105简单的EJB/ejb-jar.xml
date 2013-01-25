@@ -1,0 +1,15 @@
+<!DOCTYPE ejb-jar>
+<ejb-jar>
+     <description>Simple EJB application </description>
+     <display-name>HelloWorld Application</display-name>
+     <enterprise-beans>
+      <session>
+       <ejb-name>HelloWorld</ejb-name>
+         <home>Hello.HelloWorldHome</home>
+         <remote>Hello.HelloWorld</remote>
+         <ejb-class>Hello.HelloWorldBean</ejb-class>
+         <session-type>Stateless</session-type>
+         <transaction-type>Bean</transaction-type>
+        </session>
+       </enterprise-beans>
+</ejb-jar>

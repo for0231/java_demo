@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss>
+  <enterprise-beans>
+    <message-driven>
+      <ejb-name>MsgBean</ejb-name>
+      <destination-jndi-name>queue/A</destination-jndi-name>
+	  <resource-ref>
+            <res-ref-name>ConnectionFactory</res-ref-name>
+            <jndi-name>ConnectionFactory</jndi-name>
+      </resource-ref>	  
+	  <resource-ref>
+            <res-ref-name>MailSession</res-ref-name>
+            <jndi-name>java:/Mail</jndi-name>
+      </resource-ref>	  
+	</message-driven>
+  </enterprise-beans>
+  
+</jboss>

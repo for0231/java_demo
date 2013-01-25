@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="Cp1252"?>
+
+<!DOCTYPE ejb-jar PUBLIC 
+        '-//Sun Microsystems, Inc.//DTD Enterprise JavaBeans 2.0//EN' 
+        'http://java.sun.com/dtd/ejb-jar_2_0.dtd'>
+<ejb-jar>
+  <description>A simple message-driven bean</description>
+  <display-name>MessageBeanJAR</display-name>
+  <enterprise-beans>
+    <message-driven>
+      <description>The message-driven bean</description>
+      <display-name>MsgBean</display-name>
+      <ejb-name>MsgBean</ejb-name>
+      <ejb-class>examples.Message.MessageBean</ejb-class>
+      <transaction-type>Bean</transaction-type>
+      <acknowledge-mode>AUTO_ACKNOWLEDGE</acknowledge-mode>
+      <message-driven-destination>
+        <destination-type>javax.jms.Queue</destination-type>
+      </message-driven-destination>
+      <!--security-identity>
+        <description></description>
+        <run-as-specified-identity>
+          <description></description>
+          <role-name></role-name>
+        </run-as-specified-identity>
+		<use-caller-identity></use-caller-identity>
+      </security-identity-->
+      <resource-ref>
+        <res-ref-name>ConnectionFactory</res-ref-name>
+        <res-type>javax.jms.QueueConnectionFactory</res-type>
+        <res-auth>Container</res-auth>
+        <res-sharing-scope>Shareable</res-sharing-scope>
+      </resource-ref>
+      <resource-ref>
+        <res-ref-name>MailSession</res-ref-name>
+        <res-type>javax.mail.Session</res-type>
+        <res-auth>Container</res-auth>
+        <res-sharing-scope>Shareable</res-sharing-scope>
+      </resource-ref>
+      <resource-env-ref>
+        <resource-env-ref-name>OrderQueue</resource-env-ref-name>
+        <resource-env-ref-type>javax.jms.Queue</resource-env-ref-type>
+      </resource-env-ref>
+    </message-driven>
+  </enterprise-beans>
+</ejb-jar>

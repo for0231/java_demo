@@ -1,0 +1,4 @@
+*.swp
+/Example/nbproject/private/
+/Example/build/
+/Example/dist/

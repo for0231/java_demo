@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>会员登入</title>
+<script language="javascript">
+<!--
+  function formSubmit( url ){
+    document.OrderForm.action = url;
+    document.OrderForm.submit();
+  }
+//-->
+</script>
+</head>
+<body bgcolor="#CCCCCC">
+<form method="post" 
+  action="OrderForm.jsp" name="OrderForm">
+  <div align="center"> 
+    <p><font size="6"><b>网路订购</b></font></p>
+    <p>&nbsp;</p>
+    <p>帐号 : 
+      <input type="text" 
+        name="user_id" maxlength="8" size="10"></p>
+    <p><a href="javascript:formSubmit('QueryOrder.jsp')"> 
+      订单查询</a></p>
+    <p> 
+      <input type="submit" 
+        name="Submit" value="  订购  ">
+    </p>
+  </div>
+</form>
+</body>
+</html>

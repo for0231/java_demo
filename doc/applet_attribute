@@ -1,0 +1,15 @@
+属性列表      放置        属性      描述
+attribute1    <applet>    code      使用的Applet类文件的名字
+                          codebase  基目录的URL,Applet的类文件都存放在这里
+                          height    高度 
+                          width     宽度
+                          vspace    垂直距离
+                          hspace    水平距离
+                          align     对齐方式
+                          alt       不显示Applet时,显示的实际文本
+                          archive   资源列表
+                          object    代替code属性出现,将Applet类文件作为一个对象调用
+ 
+Attribute2    <PARAM>     name      Applet程序中所需的参数名
+                          value     Applet程序中所需参数传递的值
+

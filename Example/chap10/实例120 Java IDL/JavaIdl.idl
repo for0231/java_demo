@@ -1,0 +1,7 @@
+module JavaIdlApp
+¡¡¡¡{
+¡¡¡¡ 	interface JavaIdl
+¡¡¡¡ 	{
+¡¡¡¡ 		string SimpleJavaIdl();
+¡¡¡¡ 	}£»
+¡¡¡¡}£»
